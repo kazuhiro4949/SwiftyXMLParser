@@ -403,7 +403,7 @@ extension XML {
                 generator = elements
             }
             var index = 0
-            return anyGenerator {
+            return AnyGenerator {
                 if index < generator.count {
                     return Accessor(generator[index++])
                 } else {
